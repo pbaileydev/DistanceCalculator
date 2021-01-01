@@ -2,17 +2,17 @@ export class LocationFind{
     
     constructor(name){
         this._name = name;
-        this._mUrl = `http://open.mapquestapi.com/geocoding/v1/address?key=zGxzl0uE9P0bAMCKd3su8AjJi8r0gtYR&location=${this._name}&thumbMaps=true`;
+        this._mUrl = `https://open.mapquestapi.com/geocoding/v1/address?key=zGxzl0uE9P0bAMCKd3su8AjJi8r0gtYR&location=${this._name}&thumbMaps=true`;
         this.findImage();
     }
   
     
     getImage(){
-        return `http://open.mapquestapi.com/geocoding/v1/address?key=zGxzl0uE9P0bAMCKd3su8AjJi8r0gtYR&location=${this._name}&thumbMaps=true`;
+        return `https://open.mapquestapi.com/geocoding/v1/address?key=zGxzl0uE9P0bAMCKd3su8AjJi8r0gtYR&location=${this._name}&thumbMaps=true`;
     }
     
     findImage() {
-        fetch(`http://open.mapquestapi.com/geocoding/v1/address?key=zGxzl0uE9P0bAMCKd3su8AjJi8r0gtYR&location=${this._name}&thumbMaps=true`)
+        fetch(`https://open.mapquestapi.com/geocoding/v1/address?key=zGxzl0uE9P0bAMCKd3su8AjJi8r0gtYR&location=${this._name}&thumbMaps=true`)
         .then(result=>{
             if (result != null){
                 console.log("Success, Nice!")
@@ -45,7 +45,7 @@ export class LocationFind{
     static getDistanceBetween(locationOne,locationTwo){
         let distance;
         let facts = document.querySelectorAll('div')[0];
-        fetch(`http://www.mapquestapi.com/directions/v2/route?key=zGxzl0uE9P0bAMCKd3su8AjJi8r0gtYR&from=${locationOne}&to=${locationTwo}`)
+        fetch(`https://www.mapquestapi.com/directions/v2/route?key=zGxzl0uE9P0bAMCKd3su8AjJi8r0gtYR&from=${locationOne}&to=${locationTwo}`)
         .then(result=>{
         return result.json()})
         .then(res=>{
