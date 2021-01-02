@@ -1,6 +1,6 @@
 export class LocationFind{
     
-    constructor(name){
+     constructor(name){
         this._name = name;
         this._mUrl = `https://open.mapquestapi.com/geocoding/v1/address?key=zGxzl0uE9P0bAMCKd3su8AjJi8r0gtYR&location=${this._name}&thumbMaps=true`;
         this.findImage();
@@ -30,7 +30,7 @@ export class LocationFind{
             let nodeType = document.createElement("h3");
             let factsInfo = document.createTextNode(this._name);
             let imagePlace = document.createElement("img");
-            const facts = document.querySelectorAll("div")[0];
+            const facts = document.querySelectorAll("div")[1];
             imagePlace.setAttribute('src',this._mUrl);
             nodeType.appendChild(factsInfo);
             //console.log(adminArea);
