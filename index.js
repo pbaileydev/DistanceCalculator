@@ -12,8 +12,8 @@ searchButton.addEventListener("click",()=>{
     if(info == "" || infoTwo ==""){
         alert("Please fill in the blank");
     }
-    const firstPlace = new LocationFind(info);
-    const secondPlace = new LocationFind(infoTwo);
+    const firstPlace = new LocationFind(info,'start');
+    const secondPlace = new LocationFind(infoTwo,'end');
     console.log(info);
     console.log(LocationFind.getDistanceBetween(info,infoTwo));
 })
