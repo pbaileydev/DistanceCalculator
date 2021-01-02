@@ -2,7 +2,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-weight: lighter;
+    height: auto;
     background-color: skyblue;
+}
+footer{
+    text-align: center;
 }
 button{
     background-color: white;
@@ -16,16 +20,20 @@ h1{
 h3{
     font-weight: lighter;
 }
-
+input{
+    size: 20px;
+}
 .container{
     display:flexbox;
     font-weight: lighter;
+    height:auto;
     background-color: skyblue;
     justify-content: center;
     text-align: center;
 }
 img{
     border: 2px solid orange;
+    visibility: visible;
 }
 input{
     border: none;
